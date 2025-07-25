@@ -1,10 +1,10 @@
-import RedOakLogo from '../assets/RedOakLogo.png';
+import logo from '../assets/logo.jpg';
 import { LuUserRound, LuShoppingCart } from "react-icons/lu";
 import { useMediaQuery } from '@mui/material';
 import { IoSearch } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   const isMobile = useMediaQuery('(max-width:600px)');
@@ -31,23 +31,23 @@ function NavBar() {
             
                   {/* Logo */}
                   <a className="navbar-brand m-0">
-                    <img src={RedOakLogo} alt="logo" style={{ height: "4rem" }} />
+                    <img src={logo} alt="logo" style={{ height: "4rem" }} />
                   </a>
             
                   {/* Icons */}
                   <div style={{ display: "flex", gap: "1.5rem" }}>
-                    <a className="navbar-user-icon">
+                    <Link to={'/profile'} className="navbar-user-icon">
                       <LuUserRound style={{ color: "black" }} size={30} />
-                    </a>
-                    <a className="navbar-cart-icon">
+                    </Link>
+                    <Link to={'/cart'} className="navbar-cart-icon">
                       <LuShoppingCart style={{ color: "black" }} size={30} />
-                    </a>
+                    </Link>
                   </div>
             
                   {/* Offcanvas */}
                   <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div className="offcanvas-header">
-                        <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <h5 className="offcanvas-title" id="offcanvasNavbarLabel">JPShopFit</h5>
                           <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                   <div className="offcanvas-body">
@@ -55,7 +55,7 @@ function NavBar() {
             
                           {/* OFFICE */}
                           <li className="nav-item">
-                            <button className="btn btn-primary-light mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#officeCollapse" aria-expanded="false" aria-controls="officeCollapse" style={{ width: "100%" }}>
+                            <button className="btn btn-primary-light mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#officeCollapse" aria-expanded="false" aria-controls="officeCollapse" style={{ width: "100%", textAlign:"start" }}>
                                     OFFICE
                                   </button>
                                   <div className="collapse" id="officeCollapse">
@@ -68,7 +68,7 @@ function NavBar() {
                   
                                 {/* HOME */}
                                 <li className="nav-item">
-                                  <button className="btn btn-primary-light mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#homeCollapse" aria-expanded="false" aria-controls="homeCollapse" style={{ width: "100%" }}>
+                                  <button className="btn btn-primary-light mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#homeCollapse" aria-expanded="false" aria-controls="homeCollapse" style={{ width: "100%" , textAlign:"start"}}>
                                     HOME
                                   </button>
                                   <div className="collapse" id="homeCollapse">
@@ -81,7 +81,7 @@ function NavBar() {
             
                                 {/* CAFE */}
                                 <li className="nav-item">
-                                  <button className="btn btn-primary-light mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#cafeCollapse" aria-expanded="false" aria-controls="cafeCollapse" style={{ width: "100%" }}>
+                                  <button className="btn btn-primary-light mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#cafeCollapse" aria-expanded="false" aria-controls="cafeCollapse" style={{ width: "100%", textAlign:"start" }}>
                                     CAFE
                                   </button>
                                   <div className="collapse" id="cafeCollapse">
@@ -92,22 +92,9 @@ function NavBar() {
                                   </div>
                                 </li>
             
-                                {/* B2B */}
-                                <li className="nav-item">
-                                  <button className="btn btn-primary-light mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#b2bCollapse" aria-expanded="false" aria-controls="b2bCollapse" style={{ width: "100%" }}>
-                                    B2B
-                                  </button>
-                                  <div className="collapse" id="b2bCollapse">
-                                    <div className="card card-body">
-                                      <p style={{ borderBottom: "1px solid gray" }}>Bulk Orders</p>
-                                      <p style={{ borderBottom: "1px solid gray" }}>Corporate Clients</p>
-                                    </div>
-                                  </div>
-                                </li>
-            
                                 {/* ABOUT US */}
                                 <li className="nav-item">
-                                  <button className="btn btn-primary-light mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#aboutCollapse" aria-expanded="false" aria-controls="aboutCollapse" style={{ width: "100%" }}>
+                                  <button className="btn btn-primary-light mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#aboutCollapse" aria-expanded="false" aria-controls="aboutCollapse" style={{ width: "100%" , textAlign:"start"}}>
                                     About Us
                                   </button>
                                   <div className="collapse" id="aboutCollapse">
@@ -129,33 +116,27 @@ function NavBar() {
             
                           {/* Logo */}
                           <a className="navbar-brand m-0">
-                            <img src={RedOakLogo} alt="logo" style={{ height: "4rem",}} />
+                            <img src={logo} alt="logo" style={{ height: "4rem",}} />
                           </a>
             
                           {/* Icons */}
                           <div className="icons" style={{ display: "flex", gap: "1.5rem", marginLeft:"50rem"}}>
-                            <a className="navbar-user-icon">
+                            <Link to={'/profile'} className="navbar-user-icon">
                               <LuUserRound style={{ color: "black" }} size={30} />
-                            </a>
+                            </Link>
                             <a className="navbar-user-icon">
                               <IoSearch style={{ color:"black" }} size={30}/>
                             </a>
-                            <a className="navbar-cart-icon">
+                            <Link to={'/cart'} className="navbar-cart-icon">
                               <LuShoppingCart style={{ color: "black" }} size={30} />
-                            </a>
+                            </Link>
                           </div>
                           <div className='Menu' style={{}}><br/>
                             <ul style={{listStyle:"none", display:"flex", gap:"1.5rem", fontSize:"large"}}>
-                              <li
-                              onMouseEnter={() => setHover(true)}
-                              onMouseLeave={() => setHover(false)}
-                              style={{
-                                borderBottom: hover ? "2px solid black" : "none",
-                              }}
-                              >Office <IoIosArrowDown /></li>
-                              <li>Home <IoIosArrowDown /></li>
-                              <li>Cafe <IoIosArrowDown /></li>
-                              <li>About Us <IoIosArrowDown /></li>
+                              <Link to={'/office'} style={{textDecoration:"none", color:"black"}}><li>Office <IoIosArrowDown /></li></Link>
+                              <Link to={'/'} style={{textDecoration:"none", color:"black"}}><li>Home <IoIosArrowDown /></li></Link>
+                              <Link to={'/Cafe'} style={{textDecoration:"none", color:"black"}}><li>Cafe <IoIosArrowDown /></li></Link>
+                              <Link to={'/about'} style={{textDecoration:"none", color:"black"}}><li>About Us <IoIosArrowDown /></li></Link>
                             </ul>
                           </div>
                         </div>

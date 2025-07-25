@@ -4,6 +4,7 @@ import HeroSection from './HeroSection';
 import NavBar from './NavBar';
 import Products from './Products';
 import Footer from './Footer';
+import HorizontalScroll from './HorizontalScroll';
 
 function MobileView() {
 
@@ -17,6 +18,7 @@ function MobileView() {
         <Products/>
         <br/>
         <Products/>
+        <HorizontalScroll/>
         <Footer/>
         </div>
     </>
