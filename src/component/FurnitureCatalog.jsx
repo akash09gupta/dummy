@@ -25,16 +25,17 @@ function FurnitureCatalog() {
           {categories.map((item, idx) => (
             <div className="col-6 col-md-4 col-lg-3 mb-4" key={idx}>
               <div
-                className="mx-auto border rounded-circle"
+                className="mx-auto rounded-circle"
                 style={{
                   width: "120px",
                   height: "120px",
                   backgroundImage: `url(${item.img})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
+                  border:"6px solid #105B63"
                 }}
               ></div>
-              <p className="mt-3">{item.label}</p>
+              <p className="mt-3 fs-5">{item.label}</p>
             </div>
           ))}
         </div>
@@ -52,10 +53,11 @@ function FurnitureCatalog() {
                   backgroundImage: `url(${item.img})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
-                  border:"3px solid #e5e5e5"
+                  // border:"3px solid #e5e5e5"
+                  border:"7px solid #105B63"
                 }}
               ></div>
-              <p className="mt-3">{item.label}</p>
+              <p className="mt-3 fs-5">{item.label}</p>
             </div>
           ))}
         </div>
