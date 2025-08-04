@@ -11,7 +11,7 @@ function App() {
   const isMobile = useMediaQuery('(max-width:600px)');
 
   return (
-    <><div className='w-100 h-100'>
+    <><div className='w-100 h-auto'>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={isMobile ? ( <MobileView/> ) : ( <DesktopView/> ) }></Route>

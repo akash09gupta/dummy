@@ -5,6 +5,7 @@ import NavBar from './NavBar';
 import Products from './Products';
 import Footer from './Footer';
 import HorizontalScroll from './HorizontalScroll';
+import ClientTestinomial from './ClientTestinomial';
 
 function MobileView() {
 
@@ -16,9 +17,8 @@ function MobileView() {
         <FurnitureCatalog/>
         <StatsSection/>
         <Products/>
-        <br/>
-        <Products/>
         <HorizontalScroll/>
+        <ClientTestinomial/>
         <Footer/>
         </div>
     </>

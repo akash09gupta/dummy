@@ -2,7 +2,7 @@ import slide1 from '../assets/slide-1.jpeg';
 import slide2 from '../assets/slide-2.jpeg';
 import slide3 from '../assets/slide-3.jpeg';
 
-import { useMediaQuery } from '@mui/material';
+import { Typography, useMediaQuery } from '@mui/material';
 
 const categories = [
   { img: slide1, label: "Home Lounge Chairs" },
@@ -21,6 +21,10 @@ function FurnitureCatalog() {
         <>
         {isMobile ? (
           <div className="container py-5">
+            {/* <Typography variant='h3' className='py-4 mt-0 fw-bold'>Our Catalog</Typography> */}
+            <Typography variant="h3" className="py-4 mt-0 fw-bold d-flex align-items-center" >
+              Our <Typography variant="h3" className="py-4 mt-0 fw-bold ms-1"  style={{ color: "#EC2227"}}>Catalog</Typography>
+            </Typography>
         <div className="row text-center">
           {categories.map((item, idx) => (
             <div className="col-6 col-md-4 col-lg-3 mb-4" key={idx}>
@@ -42,6 +46,9 @@ function FurnitureCatalog() {
       </div>
         ) : (
           <div className="container py-5">
+            <Typography variant="h3" className="py-4 mt-0 fw-bold d-flex align-items-center" >
+              Our <Typography variant="h3" className="py-4 mt-0 fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Catalog</Typography>
+            </Typography>
         <div className="row text-center">
           {categories.map((item, idx) => (
             <div className="col-6 col-md-4 col-lg-3 mb-4" key={idx}>

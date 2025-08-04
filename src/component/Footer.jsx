@@ -2,7 +2,8 @@ import { FaInstagram, FaPinterest, FaYoutube, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer className="bg-light py-5 mt-5" style={{ backgroundColor: "#e5e5e5" }}>
+    // <footer className="bg-light py-5 mt-5" style={{ backgroundColor: "#e5e5e5" }}>
+    <footer className="py-5 mt-5 text-white" style={{ backgroundColor: "#105B63", borderRadius:"50px 50px 0 0" }}>
       <div className="container">
         <div className="row text-start">
           {/* Column 1 */}

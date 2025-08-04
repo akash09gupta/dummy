@@ -5,4 +5,15 @@
 
 .ak:hover { color: black;}
 
+/* Add this to your global CSS file or module */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+
 

@@ -8,21 +8,28 @@ function HeroSection() {
     return (
         <>
         {isMobile ? (
-          <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel" style={{ marginTop: "8rem" }}>
-                      <div className="carousel-inner">
-                        <div className="carousel-item active">
-                          <img src={slide1} className="d-block w-100" style={{ height: "80vh", objectFit: "cover" }} alt="Slide 1" />
-                        </div>
-                        <div className="carousel-item">
-                          <img src={slide2} className="d-block w-100" style={{ height: "80vh", objectFit: "cover" }} alt="Slide 2" />
-                        </div>
-                        <div className="carousel-item">
-                          <img src={slide3} className="d-block w-100" style={{ height: "80vh", objectFit: "cover" }} alt="Slide 3" />
-                        </div>
-                      </div>
-                    </div>
+          <div
+            id="carouselExampleSlidesOnly"
+            className="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-touch="true"
+            style={{ marginTop: "8rem" }}
+          >
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src={slide1} className="d-block w-100" style={{ height: "80vh", objectFit: "cover" }} alt="Slide 1" />
+              </div>
+              <div className="carousel-item">
+                <img src={slide2} className="d-block w-100" style={{ height: "80vh", objectFit: "cover" }} alt="Slide 2" />
+              </div>
+              <div className="carousel-item">
+                <img src={slide3} className="d-block w-100" style={{ height: "80vh", objectFit: "cover" }} alt="Slide 3" />
+              </div>
+            </div>
+          </div>
+
         ) : (
-                   <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+          <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
               <div className="carousel-indicators">
                 <button
                   type="button"
