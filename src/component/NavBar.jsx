@@ -185,29 +185,51 @@ function NavBar() {
             </a>
 
             {/* Menu */}
-            <ul
-              style={{
-                listStyle: "none",
-                display: "flex",
-                gap: "1.5rem",
-                fontSize: "larger",
-                marginBottom: "0",
-                fontWeight: "bold"
-              }}
-            >
-              <Link to="/office" style={{ textDecoration: "none", color: "white" }}>
-                <li className='ak'>Office <IoIosArrowDown /></li>
-              </Link>
-              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-                <li className='ak'>Home <IoIosArrowDown /></li>
-              </Link>
-              <Link to="/Cafe" style={{ textDecoration: "none", color: "white" }}>
-                <li className='ak'>Cafe <IoIosArrowDown /></li>
-              </Link>
-              <Link to="/about" style={{ textDecoration: "none", color: "white" }}>
-                <li className='ak'>About Us <IoIosArrowDown /></li>
-              </Link>
-            </ul>
+            <div className='nav-list h-auto'>
+              <ul
+                style={{
+                  listStyle: "none",
+                  display: "flex",
+                  gap: "1.5rem",
+                  fontSize: "larger",
+                  marginBottom: "0",
+                  fontWeight: "bold",
+                }}
+              >
+                <li className="nav-item position-relative dropdown-hover">
+                  <Link to="/office" className="text-white text-decoration-none">Office <IoIosArrowDown /></Link>
+                  <div className="dropdown-menu-custom">
+                    <Link to="/office/desk" className="dropdown-item-custom fw-light">Desk</Link>
+                    <Link to="/office/chair" className="dropdown-item-custom fw-light">Chair</Link>
+                    <Link to="/home/bed" className="dropdown-item-custom fw-light">Executive Chair</Link>
+                    <Link to="/home/sofa" className="dropdown-item-custom fw-light">Ergonomic Chair</Link>
+                    <Link to="/home/bed" className="dropdown-item-custom fw-light">Visitor Chair</Link>
+                    <Link to="/home/sofa" className="dropdown-item-custom fw-light">Leather Chair</Link>
+                  </div>
+                </li>
+                <li className="nav-item position-relative dropdown-hover">
+                  <Link to="/" className="text-white text-decoration-none">Home <IoIosArrowDown /></Link>
+                  <div className="dropdown-menu-custom">
+                    <Link to="/home/bed" className="dropdown-item-custom fw-light">Bed</Link>
+                    <Link to="/home/sofa" className="dropdown-item-custom fw-light">Sofa</Link>
+                  </div>
+                </li>
+                <li className="nav-item position-relative dropdown-hover">
+                  <Link to="/cafe" className="text-white text-decoration-none">Cafe <IoIosArrowDown /></Link>
+                  <div className="dropdown-menu-custom">
+                    <Link to="/cafe/stool" className="dropdown-item-custom fw-light">Stool</Link>
+                    <Link to="/cafe/counter" className="dropdown-item-custom fw-light">Counter</Link>
+                  </div>
+                </li>
+                <li className="nav-item position-relative dropdown-hover">
+                  <Link to="/about" className="text-white text-decoration-none">About Us <IoIosArrowDown /></Link>
+                  <div className="dropdown-menu-custom">
+                    <Link to="/about/story" className="dropdown-item-custom fw-light">Our Story</Link>
+                    <Link to="/about/contact" className="dropdown-item-custom fw-light">Contact</Link>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
             {/* Icons */}
             <div style={{ display: "flex", gap: "1.5rem" }}>

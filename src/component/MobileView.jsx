@@ -5,7 +5,7 @@ import NavBar from './NavBar';
 import Products from './Products';
 import Footer from './Footer';
 import HorizontalScroll from './HorizontalScroll';
-import ClientTestinomial from './ClientTestinomial';
+import ClientTestimonials from './ClientTestinomial';
 
 function MobileView() {
 
@@ -18,7 +18,7 @@ function MobileView() {
         <StatsSection/>
         <Products/>
         <HorizontalScroll/>
-        <ClientTestinomial/>
+        <ClientTestimonials/>
         <Footer/>
         </div>
     </>

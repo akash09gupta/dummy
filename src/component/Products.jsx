@@ -21,8 +21,8 @@ function Products() {
   return (
     <div className="container mt-5 pt-5">
       {/* <Typography variant='h3' className='py-4 mt-0 ms-1 fw-bold'>Our Products</Typography> */}
-      <Typography variant="h3" className="py-4 mt-0 fw-bold d-flex align-items-center" >
-        Our <Typography variant="h3" className="py-4 mt-0 fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Products</Typography>
+      <Typography variant={isMobile ? "h4" : "h3"} className="pb-4 ms-1 fw-bold d-flex align-items-center" >
+        Our <Typography variant={isMobile ? "h4" : "h3"} className="mt-0 fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Products</Typography>
       </Typography>
       <div className="row g-4 justify-content-center">
         {productList.map((product, index) => (

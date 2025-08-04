@@ -5,7 +5,7 @@ import StatsSection from './StatsSection';
 import Products from './Products';
 import Footer from './Footer';
 import HorizontalScroll from './HorizontalScroll';
-import ClientTestinomial from './ClientTestinomial';
+import ClientTestimonials from './ClientTestinomial';
 
 function DesktopView() {
     return (
@@ -17,7 +17,7 @@ function DesktopView() {
             <StatsSection/>
             <Products/>
             <HorizontalScroll/>
-            <ClientTestinomial/>
+            <ClientTestimonials/>
             <Footer/>
         </div>
         </>

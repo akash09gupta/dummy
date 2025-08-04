@@ -22,8 +22,8 @@ function FurnitureCatalog() {
         {isMobile ? (
           <div className="container py-5">
             {/* <Typography variant='h3' className='py-4 mt-0 fw-bold'>Our Catalog</Typography> */}
-            <Typography variant="h3" className="py-4 mt-0 fw-bold d-flex align-items-center" >
-              Our <Typography variant="h3" className="py-4 mt-0 fw-bold ms-1"  style={{ color: "#EC2227"}}>Catalog</Typography>
+            <Typography variant="h4" className="pb-3 ms-4 fw-bold d-flex align-items-center" >
+              Our <Typography variant="h4" className="mt-0 fw-bold ms-1"  style={{ color: "#EC2227"}}>Catalog</Typography>
             </Typography>
         <div className="row text-center">
           {categories.map((item, idx) => (

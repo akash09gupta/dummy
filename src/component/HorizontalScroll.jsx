@@ -1,12 +1,15 @@
 import React, { useRef, useEffect } from 'react';
 import p1 from '../assets/p1.jpeg';
-import { Typography } from '@mui/material';
+import { Typography, useMediaQuery } from '@mui/material';
+
 
 const logos = Array(10).fill(p1); // Fill with sample logos
 
 const HorizontalScroll = () => {
   const scrollRef1 = useRef(null);
   const scrollRef2 = useRef(null);
+
+  const isMobile = useMediaQuery('(max-width:600px)');
 
   // Function to auto-scroll a container
   const setupAutoScroll = (ref) => {
@@ -41,8 +44,8 @@ const HorizontalScroll = () => {
     <div className="container-fluid my-5 mt-5">
       <hr />
       {/* <h3 className="text-center mt-5">Architect Clientele</h3> */}
-      <Typography variant="h3" className="mt-5 fw-bold d-flex align-items-center justify-content-center" >
-        Architect <Typography variant="h3" className="mt-0 fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Clientele</Typography>
+      <Typography variant={isMobile ? "h4" : "h3"} className="mt-5 fw-bold d-flex align-items-center justify-content-center" >
+        Architect <Typography variant={isMobile ? "h4" : "h3"} className="mt-0 fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Clientele</Typography>
       </Typography>
       <h6 className="text-center p-3">
         JpShopFit has supplied custom furniture solutions to architects and interiors designers for their projects across India over the years.
@@ -76,8 +79,8 @@ const HorizontalScroll = () => {
         ))}
       </div>
 
-      <Typography variant="h3" className="mt-5 fw-bold d-flex align-items-center justify-content-center" >
-        Corporate <Typography variant="h3" className="mt-0 fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Clientele</Typography>
+      <Typography variant={isMobile ? "h4" : "h3"} className="mt-5 fw-bold d-flex align-items-center justify-content-center" >
+        Corporate <Typography variant={isMobile ? "h4" : "h3"} className="mt-0 fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Clientele</Typography>
       </Typography>
       <h6 className="text-center p-3">
         JpShopFit has supplied custom furniture solutions to architects and interiors designers for their projects across India over the years.
