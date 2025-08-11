@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
 import slide1 from '../assets/slide-1.jpeg';
 import slide2 from '../assets/slide-2.jpeg';
 import slide3 from '../assets/slide-3.jpeg';
 
 import { Typography, useMediaQuery } from '@mui/material';
+import AOS from 'aos';
 
 const categories = [
   { img: slide1, label: "Home Lounge Chairs" },
@@ -17,13 +19,19 @@ const categories = [
 
 function FurnitureCatalog() {
   const isMobile = useMediaQuery('(max-width:600px)');
+  useEffect(()=>{
+      AOS.init({
+          duration: 1000,
+      });
+      AOS.refresh();
+    },[])
     return (
         <>
         {isMobile ? (
-          <div className="container py-5">
+          <div className="container py-5" data-aos="fade-up">
             {/* <Typography variant='h3' className='py-4 mt-0 fw-bold'>Our Catalog</Typography> */}
             <Typography variant="h4" className="pb-3 ms-4 fw-bold d-flex align-items-center" >
-              Our <Typography variant="h4" className="mt-0 fw-bold ms-1"  style={{ color: "#EC2227"}}>Catalog</Typography>
+              Our <span variant="h4" className="mt-0 fw-bold ms-1"  style={{ color: "#EC2227"}}>Catalog</span>
             </Typography>
         <div className="row text-center">
           {categories.map((item, idx) => (
@@ -47,13 +55,13 @@ function FurnitureCatalog() {
         ) : (
           <div className="container py-5">
             <Typography variant="h3" className="py-4 mt-0 fw-bold d-flex align-items-center" >
-              Our <Typography variant="h3" className="py-4 mt-0 fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Catalog</Typography>
+              Our <span variant="h3" className="py-4 mt-0 fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Catalog</span>
             </Typography>
-        <div className="row text-center">
+        <div className="row text-center" data-aos="fade-up">
           {categories.map((item, idx) => (
             <div className="col-6 col-md-4 col-lg-3 mb-4" key={idx}>
               <div
-                className="mx-auto rounded-circle"
+                className="mx-auto rounded-circle furnitureCatalog"
                 style={{
                   width: "12rem",
                   height: "12rem",

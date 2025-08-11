@@ -1,5 +1,7 @@
 import { Typography, useMediaQuery } from '@mui/material'
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 // const testimonialsList = [
 //     {id: 1,
@@ -14,10 +16,16 @@ import React, { Component } from 'react'
 
 function ClientTestimonials() {
         const isMobile = useMediaQuery('(max-width:600px)');
+        useEffect(()=>{
+            AOS.init({
+                duration: 1000,
+            });
+            AOS.refresh();
+        },[])
     return (
-      <div className='client-testinomial p-2 text-center h-auto container'> 
+      <div className='client-testinomial p-2 text-center h-auto container' data-aos="fade-up"> 
             <Typography variant={isMobile ? "h4" : 'h3' } className="fw-bold">
-              Client <Typography variant={isMobile ? "h4" : 'h3'} className="fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Testimonials</Typography>
+              Client <span variant={isMobile ? "h4" : 'h3'} className="fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Testimonials</span>
             </Typography>
         <div className='feedback h-75 w-100 p-4 text-center row'>
             <div className='testinomial w-100 p-5 h-50 col'>

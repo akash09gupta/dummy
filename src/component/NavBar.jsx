@@ -11,7 +11,6 @@ import { FiMenu } from "react-icons/fi";
 function NavBar() {
   const isMobile = useMediaQuery('(max-width:600px)');
   const [scrolled, setScrolled] = useState(false);
-  const [hoveredItem, setHoveredItem] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +20,7 @@ function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navbarHeight = scrolled ? "4rem" : "6rem";
+  const navbarHeight = scrolled ? "4rem" : "5rem";
 
   return (
     <div>
@@ -31,7 +30,7 @@ function NavBar() {
           className="navbar bg-body-light fixed-top"
           style={{
             width: "100%",
-            height: "8rem",
+            height: "6rem",
             backgroundColor: "#105B63",
           }}
         >
@@ -181,7 +180,7 @@ function NavBar() {
           <div className="container-fluid d-flex justify-content-between align-items-center px-4">
             {/* Logo */}
             <a className="navbar-brand m-0 border rounded">
-              <img src={logo} alt="logo" style={{ height: scrolled ? "2.5rem" : "4rem", padding:"1px", transition: "transform 0.3s ease"}} />
+              <img src={logo} alt="logo" style={{ height: scrolled ? "2.5rem" : "3rem", padding:"1px", transition: "transform 0.3s ease"}} />
             </a>
 
             {/* Menu */}

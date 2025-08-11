@@ -19,7 +19,7 @@ function Office() {
           },
         }}
       >
-      <Paper elevation={5} />
+      <Paper elevation={8} />
       <Paper />
       <Paper />
       <Paper />

@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 import p1 from "../assets/p1.jpeg";
 import p2 from "../assets/p2.jpeg";
 import { Typography, useMediaQuery } from '@mui/material';
+import Aos from "aos";
 
 function Products() {
   const isMobile = useMediaQuery('(max-width:600px)');
@@ -16,19 +18,26 @@ function Products() {
     { img: p2, name: "LILIA", price: "Rs. 9204.00" },
   ];
 
-//useEffect(()=>{},[]) for further use to fetch products
+// useEffect(()=>{},[]) for further use to fetch products
+  useEffect(()=>{
+    Aos.init({
+      duration:1000,
+    });
+    Aos.refresh();
+  },[])
 
   return (
     <div className="container mt-5 pt-5">
       {/* <Typography variant='h3' className='py-4 mt-0 ms-1 fw-bold'>Our Products</Typography> */}
       <Typography variant={isMobile ? "h4" : "h3"} className="pb-4 ms-1 fw-bold d-flex align-items-center" >
-        Our <Typography variant={isMobile ? "h4" : "h3"} className="mt-0 fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Products</Typography>
+        Our <span variant={isMobile ? "h4" : "h3"} className="mt-0 fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Products</span>
       </Typography>
-      <div className="row g-4 justify-content-center">
+      <div className="row g-4 justify-content-center" >
         {productList.map((product, index) => (
           <div
             key={index}
             className={isMobile ? "col-6" : "col-md-3"}
+            data-aos="fade-up"
           >
             <div className="card h-100" style={{ height: "33rem" }}>
               <img src={product.img} className="card-img-top" alt={product.name} />

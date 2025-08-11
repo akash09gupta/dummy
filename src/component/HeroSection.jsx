@@ -13,7 +13,6 @@ function HeroSection() {
             className="carousel slide"
             data-bs-ride="carousel"
             data-bs-touch="true"
-            style={{ marginTop: "8rem" }}
           >
             <div className="carousel-inner">
               <div className="carousel-item active">

@@ -44,3 +44,22 @@
   background-color: #f2f2f2;
 }
 
+.furnitureCatalog {
+  transition: transform 0.3 ease;
+}
+
+.furnitureCatalog:hover{
+  transform: scale(1.1);
+}
+
+.card {
+  transition: transform 0.3 ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.contact {
+  /* font-family: var(--p; */
+  /* background-color: black ; */
+}
