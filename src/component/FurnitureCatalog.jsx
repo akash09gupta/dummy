@@ -31,7 +31,7 @@ function FurnitureCatalog() {
           <div className="container py-5" data-aos="fade-up">
             {/* <Typography variant='h3' className='py-4 mt-0 fw-bold'>Our Catalog</Typography> */}
             <Typography variant="h4" className="pb-3 ms-4 fw-bold d-flex align-items-center" >
-              Our <span variant="h4" className="mt-0 fw-bold ms-1"  style={{ color: "#EC2227"}}>Catalog</span>
+              Our <span variant="h4" className="mt-0 fw-bold ms-1"  style={{ color: "#105B63"}}>Catalog</span>
             </Typography>
         <div className="row text-center">
           {categories.map((item, idx) => (
@@ -55,7 +55,7 @@ function FurnitureCatalog() {
         ) : (
           <div className="container py-5">
             <Typography variant="h3" className="py-4 mt-0 fw-bold d-flex align-items-center" >
-              Our <span variant="h3" className="py-4 mt-0 fw-bold"  style={{ color: "#EC2227", padding: "0 0.5rem" }}>Catalog</span>
+              Our <span variant="h3" className="py-4 mt-0 fw-bold"  style={{ color: "#105B63", padding: "0 0.5rem" }}>Catalog</span>
             </Typography>
         <div className="row text-center" data-aos="fade-up">
           {categories.map((item, idx) => (
