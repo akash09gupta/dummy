@@ -22,6 +22,17 @@ function NavBar() {
 
   const navbarHeight = scrolled ? "4rem" : "5rem";
 
+  const closeOffcanvas = () => {
+    const offcanvas = document.getElementById("offcanvasNavbar");
+    if (offcanvas) {
+      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
+      if (bsOffcanvas) {
+        bsOffcanvas.hide();
+      }
+    }
+  };
+
+
   return (
     <div>
       {isMobile ? (
@@ -92,12 +103,12 @@ function NavBar() {
                     </button>
                     <div className="collapse" id="officeCollapse">
                       <div className="card card-body gap-2">
-                        <Link to="/office/desk" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Desk</Link>
-                        <Link to="/office/chair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Chair</Link>
-                        <Link to="/office/executiveChair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Executive Chair</Link>
-                        <Link to="/office/ergonomicChair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Ergonomic Chair</Link>
-                        <Link to="/office/visitorChair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Visitor Chair</Link>
-                        <Link to="/office/leatherChair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Leather Chair</Link>
+                        <Link onClick={closeOffcanvas} to="/office/desk" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Desk</Link>
+                        <Link onClick={closeOffcanvas} to="/office/chair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Chair</Link>
+                        <Link onClick={closeOffcanvas} to="/office/executiveChair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Executive Chair</Link>
+                        <Link onClick={closeOffcanvas} to="/office/ergonomicChair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Ergonomic Chair</Link>
+                        <Link onClick={closeOffcanvas} to="/office/visitorChair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Visitor Chair</Link>
+                        <Link onClick={closeOffcanvas} to="/office/leatherChair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Leather Chair</Link>
                       </div>
                     </div>
                   </li>
@@ -117,8 +128,8 @@ function NavBar() {
                     </button>
                     <div className="collapse" id="homeCollapse">
                       <div className="card card-body gap-2">
-                        <Link to="/home/bed" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Bed</Link>
-                        <Link to="/home/sofa" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Sofa</Link>
+                        <Link onClick={closeOffcanvas} to="/home/bed" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Bed</Link>
+                        <Link onClick={closeOffcanvas} to="/home/sofa" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Sofa</Link>
                       </div>
                     </div>
                   </li>
@@ -138,8 +149,8 @@ function NavBar() {
                     </button>
                     <div className="collapse" id="cafeCollapse">
                       <div className="card card-body gap-2">
-                        <Link to="/cafe/stool" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Stool</Link>
-                        <Link to="/cafe/counter" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Counter</Link>
+                        <Link onClick={closeOffcanvas} to="/cafe/stool" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Stool</Link>
+                        <Link onClick={closeOffcanvas} to="/cafe/counter" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Counter</Link>
                       </div>
                     </div>
                   </li>
@@ -159,8 +170,8 @@ function NavBar() {
                     </button>
                     <div className="collapse" id="aboutCollapse">
                       <div className="card card-body gap-2">
-                        <Link to="/about/story" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Our Story</Link>
-                        <Link to="/about/contact" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Contact</Link>
+                        <Link onClick={closeOffcanvas} to="/about/story" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Our Story</Link>
+                        <Link onClick={closeOffcanvas} to="/about/contact" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Contact</Link>
                       </div>
                     </div>
                   </li>
@@ -184,7 +195,7 @@ function NavBar() {
           <div className="container-fluid d-flex justify-content-between align-items-center px-4">
             {/* Logo */}
             <a className="navbar-brand m-0 border rounded">
-              <img src={logo} alt="logo" style={{ height: scrolled ? "2.5rem" : "3rem", padding:"1px", transition: "transform 0.3s ease"}} />
+              <img src={logo} alt="logo" style={{ height: scrolled ? "2.5rem" : "3rem", padding: "1px", transition: "transform 0.3s ease" }} />
             </a>
 
             {/* Menu */}
