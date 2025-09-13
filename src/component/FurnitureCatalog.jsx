@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import slide1 from '../assets/slide-1.jpeg';
+import slide1 from '../assets/slide-1.jpg';
 import slide2 from '../assets/slide-2.jpeg';
 import slide3 from '../assets/slide-3.jpeg';
 
@@ -30,8 +30,8 @@ function FurnitureCatalog() {
         {isMobile ? (
           <div className="container py-5" data-aos="fade-up">
             {/* <Typography variant='h3' className='py-4 mt-0 fw-bold'>Our Catalog</Typography> */}
-            <Typography variant="h4" className="pb-3 ms-4 fw-bold d-flex align-items-center" >
-              Our <span variant="h4" className="mt-0 fw-bold ms-1"  style={{ color: "#105B63"}}>Catalog</span>
+            <Typography variant="h4" className="pb-3 ms-4 fw-normal d-flex align-items-center" >
+              Our <span variant="h4" className="mt-0 fw-normal ms-1"  style={{ color: "#105B63"}}>Catalog</span>
             </Typography>
         <div className="row text-center">
           {categories.map((item, idx) => (
@@ -54,8 +54,8 @@ function FurnitureCatalog() {
       </div>
         ) : (
           <div className="container py-5">
-            <Typography variant="h3" className="py-4 mt-0 fw-bold d-flex align-items-center" >
-              Our <span variant="h3" className="py-4 mt-0 fw-bold"  style={{ color: "#105B63", padding: "0 0.5rem" }}>Catalog</span>
+            <Typography variant="h3" className="py-4 mt-0 fw-normal d-flex align-items-center" >
+              Our <span variant="h3" className="py-4 mt-0 fw-normal"  style={{ color: "#105B63", padding: "0 0.5rem" }}>Catalog</span>
             </Typography>
         <div className="row text-center" data-aos="fade-up">
           {categories.map((item, idx) => (

@@ -4,19 +4,7 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import logo from "../assets/p1.jpeg";
 
-function Office() {
-  const products = [
-    { id: 1, name: "", image: logo },
-    { id: 2, name: "", image: logo },
-    { id: 3, name: "", image: logo },
-    { id: 4, name: "", image: logo },
-    { id: 5, name: "", image: logo },
-    { id: 6, name: "", image: logo },
-    { id: 7, name: "", image: logo },
-    { id: 8, name: "", image: logo },
-    { id: 9, name: "", image: logo },
-    { id: 10, name: "", image: logo },
-  ];
+function Office({ products }) {
 
   return (
     <>
@@ -26,7 +14,7 @@ function Office() {
           sx={{
             display: "flex",
             flexWrap: "wrap",
-            width:"80%",
+            width:"100%",
             gap: 2,
             justifyContent: "center",
             
@@ -39,8 +27,8 @@ function Office() {
                 backgroundImage: `url(${product.image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                width: 200,
-                height: 200,
+                width: 400,
+                height: 400,
                 display: "flex",
                 alignItems: "flex-end",
                 justifyContent: "center",

@@ -107,7 +107,7 @@ function NavBar() {
                       data-bs-target="#homeCollapse"
                       aria-expanded="false"
                       aria-controls="homeCollapse"
-                      style={{ width: "100%", textAlign: "start" }}
+                      style={{ width: "100%", textAlign: "start", }}
                     >
                       HOME
                     </button>
@@ -196,35 +196,35 @@ function NavBar() {
                 }}
               >
                 <li className="nav-item position-relative dropdown-hover">
-                  <Link to="/office" className="text-white text-decoration-none">Office <IoIosArrowDown /></Link>
+                  <Link to="/office/desk" className="text-white text-decoration-none fw-normal fs-6">OFFICE <IoIosArrowDown /></Link>
                   <div className="dropdown-menu-custom">
                     <Link to="/office/desk" className="dropdown-item-custom fw-light">Desk</Link>
                     <Link to="/office/chair" className="dropdown-item-custom fw-light">Chair</Link>
-                    <Link to="/home/bed" className="dropdown-item-custom fw-light">Executive Chair</Link>
-                    <Link to="/home/sofa" className="dropdown-item-custom fw-light">Ergonomic Chair</Link>
-                    <Link to="/home/bed" className="dropdown-item-custom fw-light">Visitor Chair</Link>
-                    <Link to="/home/sofa" className="dropdown-item-custom fw-light">Leather Chair</Link>
+                    <Link to="/office/executiveChair" className="dropdown-item-custom fw-light">Executive Chair</Link>
+                    <Link to="/office/ergonomicChair" className="dropdown-item-custom fw-light">Ergonomic Chair</Link>
+                    <Link to="/office/visitorChair" className="dropdown-item-custom fw-light">Visitor Chair</Link>
+                    <Link to="/office/leatherChair" className="dropdown-item-custom fw-light">Leather Chair</Link>
                   </div>
                 </li>
                 <li className="nav-item position-relative dropdown-hover">
-                  <Link to="/" className="text-white text-decoration-none">Home <IoIosArrowDown /></Link>
+                  <Link to="/" className="text-white text-decoration-none fw-normal fs-6">HOME <IoIosArrowDown /></Link>
                   <div className="dropdown-menu-custom">
                     <Link to="/home/bed" className="dropdown-item-custom fw-light">Bed</Link>
                     <Link to="/home/sofa" className="dropdown-item-custom fw-light">Sofa</Link>
                   </div>
                 </li>
                 <li className="nav-item position-relative dropdown-hover">
-                  <Link to="/cafe" className="text-white text-decoration-none">Cafe <IoIosArrowDown /></Link>
+                  <Link to="/cafe" className="text-white text-decoration-none fw-normal fs-6">CAFE <IoIosArrowDown /></Link>
                   <div className="dropdown-menu-custom">
                     <Link to="/cafe/stool" className="dropdown-item-custom fw-light">Stool</Link>
                     <Link to="/cafe/counter" className="dropdown-item-custom fw-light">Counter</Link>
                   </div>
                 </li>
                 <li className="nav-item position-relative dropdown-hover">
-                  <Link to="/about" className="text-white text-decoration-none">About Us <IoIosArrowDown /></Link>
+                  <Link to="/about/story" className="text-white text-decoration-none fw-normal fs-6">ABOUT US <IoIosArrowDown /></Link>
                   <div className="dropdown-menu-custom">
                     <Link to="/about/story" className="dropdown-item-custom fw-light">Our Story</Link>
-                    <Link to="/about/contact" className="dropdown-item-custom fw-light">Contact</Link>
+                    <Link to="/about/contact" className="dropdown-item-custom fw-light fw-normal fs-6">Contact</Link>
                   </div>
                 </li>
               </ul>

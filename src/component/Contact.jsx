@@ -69,16 +69,16 @@ function Contact() {
     </div>
       <div className="contact-obj2 w-50 p-5 d-flex justify-content-end align-items-center rounded-3 ">
         <form action="#" method="post" className="w-75 contact-form">
-          <p className="contact-heading fs-3 fw-bold">Get in Touch.</p>
-          <label className="contact-labels fw-bold">Your Name</label>
+          <p className="contact-heading fs-3 fw-normal">Get in Touch.</p>
+          <label className="contact-labels fw-normal">Your Name</label>
           <input className="form-control" type="text"/>
-          <label className="contact-labels fw-bold">Email Address</label>
+          <label className="contact-labels fw-normal">Email Address</label>
           <input className="form-control" type="email"/>
-          <label className="contact-labels fw-bold">Phone Number</label>
+          <label className="contact-labels fw-normal">Phone Number</label>
           <input className="form-control" type="number"/>
-          <label className="contact-labels fw-bold">Message</label>
+          <label className="contact-labels fw-normal">Message</label>
           <textarea className="form-control" type="textarea"></textarea>
-          <input type="submit" className="btn btn-primary w-25 mt-3 fw-bold" value="Submit" />
+          <input type="submit" className="btn btn-primary w-25 mt-3 fw-normal" value="Submit" />
         </form>
       </div>
     </div>

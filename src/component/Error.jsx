@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
-import Office from "./Office";
 
 function Error() {
     return (
         <>
-        {/* <div className="w-50 h-50 p-5">
-            <h3>Work in Progress</h3>
+        <div className="w-100 vh-100 p-5 bg-black text-white">
+            <h3>This Route Not Found</h3>
             <Link to='/' className="btn btn-info mt-3">Back to Home</Link>
-        </div> */}
-        <Office/>
+        </div>
         </>
     )
 }

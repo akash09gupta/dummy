@@ -1,5 +1,5 @@
 import { useMediaQuery } from '@mui/material';
-import slide1 from '../assets/slide-1.jpeg';
+import slide1 from '../assets/slide-1.jpg';
 import slide2 from '../assets/slide-2.jpeg';
 import slide3 from '../assets/slide-3.jpeg';
 

@@ -44,8 +44,8 @@ const HorizontalScroll = () => {
     <div className="container-fluid my-5 mt-5">
       <hr />
       {/* <h3 className="text-center mt-5">Architect Clientele</h3> */}
-      <Typography variant={isMobile ? "h4" : "h3"} className="mt-5 fw-bold d-flex align-items-center justify-content-center" >
-        Architect <span variant={isMobile ? "h4" : "h3"} className="mt-0 fw-bold"  style={{ color: "#105B63", padding: "0 0.5rem" }}>Clientele</span>
+      <Typography variant={isMobile ? "h4" : "h3"} className="mt-5 fw-normal fs-1 d-flex align-items-center justify-content-center" >
+        Architect <span variant={isMobile ? "h4" : "h3"} className="mt-0 fw-normal"  style={{ color: "#105B63", padding: "0 0.5rem" }}>Clientele</span>
       </Typography>
       <h6 className="text-center p-3">
         JpShopFit has supplied custom furniture solutions to architects and interiors designers for their projects across India over the years.
@@ -79,8 +79,8 @@ const HorizontalScroll = () => {
         ))}
       </div>
 
-      <Typography variant={isMobile ? "h4" : "h3"} className="mt-5 fw-bold d-flex align-items-center justify-content-center" >
-        Corporate <span variant={isMobile ? "h4" : "h3"} className="mt-0 fw-bold"  style={{ color: "#105B63", padding: "0 0.5rem" }}>Clientele</span>
+      <Typography variant={isMobile ? "h4" : "h3"} className="mt-5 fw-normal fs-1 d-flex align-items-center justify-content-center" >
+        Corporate <span variant={isMobile ? "h4" : "h3"} className="mt-0 fw-normal fs-1"  style={{ color: "#105B63", padding: "0 0.5rem" }}>Clientele</span>
       </Typography>
       <h6 className="text-center p-3">
         JpShopFit has supplied custom furniture solutions to architects and interiors designers for their projects across India over the years.
