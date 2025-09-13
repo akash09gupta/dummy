@@ -6,7 +6,7 @@ import Error from './component/Error';
 import Office from './component/Office';
 import Cafe from './component/Cafe';
 import About from './component/About';
-import Desk from './component/Office/DeskComponent/desk';
+import Desk from './component/Office/DeskComponent/Desk';
 import Sofa from './component/Home/HomeSofaComponent/Sofa';
 import Stool from './component/Cafe/CafeStoolComponent/Stool';
 import Counter from './component/Cafe/CafeCounterComponent/Counter';
