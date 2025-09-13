@@ -1,14 +1,14 @@
 import React from 'react'
 import Office from "../../Office";
-import desk1 from "../../../assets/sofaImages/sofa1.jpg";
-import desk2 from "../../../assets/sofaImages/sofa2.jpg";
-import desk3 from "../../../assets/sofaImages/sofa3.jpg";
-import desk4 from "../../../assets/sofaImages/sofa4.jpg";
-import desk5 from "../../../assets/sofaImages/sofa5.jpg";
-import desk6 from "../../../assets/sofaImages/sofa6.jpg";
-import desk7 from "../../../assets/sofaImages/sofa7.jpg";
-import desk8 from "../../../assets/sofaImages/sofa8.jpg";
-import desk9 from "../../../assets/sofaImages/sofa9.jpg";
+import desk1 from "../../../assets/SofaImages/sofa1.jpg";
+import desk2 from "../../../assets/SofaImages/sofa2.jpg";
+import desk3 from "../../../assets/SofaImages/sofa3.jpg";
+import desk4 from "../../../assets/SofaImages/sofa4.jpg";
+import desk5 from "../../../assets/SofaImages/sofa5.jpg";
+import desk6 from "../../../assets/SofaImages/sofa6.jpg";
+import desk7 from "../../../assets/SofaImages/sofa7.jpg";
+import desk8 from "../../../assets/SofaImages/sofa8.jpg";
+import desk9 from "../../../assets/SofaImages/sofa9.jpg";
 
 export default function Sofa() {
     const products = [
