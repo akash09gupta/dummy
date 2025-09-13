@@ -91,9 +91,13 @@ function NavBar() {
                       OFFICE
                     </button>
                     <div className="collapse" id="officeCollapse">
-                      <div className="card card-body">
-                        <p style={{ borderBottom: "1px solid gray" }}>Desk</p>
-                        <p style={{ borderBottom: "1px solid gray" }}>Chair</p>
+                      <div className="card card-body gap-2">
+                        <Link to="/office/desk" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Desk</Link>
+                        <Link to="/office/chair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Chair</Link>
+                        <Link to="/office/executiveChair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Executive Chair</Link>
+                        <Link to="/office/ergonomicChair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Ergonomic Chair</Link>
+                        <Link to="/office/visitorChair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Visitor Chair</Link>
+                        <Link to="/office/leatherChair" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Leather Chair</Link>
                       </div>
                     </div>
                   </li>
@@ -112,9 +116,9 @@ function NavBar() {
                       HOME
                     </button>
                     <div className="collapse" id="homeCollapse">
-                      <div className="card card-body">
-                        <p style={{ borderBottom: "1px solid gray" }}>Bed</p>
-                        <p style={{ borderBottom: "1px solid gray" }}>Sofa</p>
+                      <div className="card card-body gap-2">
+                        <Link to="/home/bed" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Bed</Link>
+                        <Link to="/home/sofa" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Sofa</Link>
                       </div>
                     </div>
                   </li>
@@ -133,9 +137,9 @@ function NavBar() {
                       CAFE
                     </button>
                     <div className="collapse" id="cafeCollapse">
-                      <div className="card card-body">
-                        <p style={{ borderBottom: "1px solid gray" }}>Stool</p>
-                        <p style={{ borderBottom: "1px solid gray" }}>Counter</p>
+                      <div className="card card-body gap-2">
+                        <Link to="/cafe/stool" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Stool</Link>
+                        <Link to="/cafe/counter" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Counter</Link>
                       </div>
                     </div>
                   </li>
@@ -154,9 +158,9 @@ function NavBar() {
                       ABOUT US
                     </button>
                     <div className="collapse" id="aboutCollapse">
-                      <div className="card card-body">
-                        <p style={{ borderBottom: "1px solid gray" }}>Our Story</p>
-                        <p style={{ borderBottom: "1px solid gray" }}>Contact</p>
+                      <div className="card card-body gap-2">
+                        <Link to="/about/story" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Our Story</Link>
+                        <Link to="/about/contact" style={{ borderBottom: "1px solid gray" }} className="text-decoration-none text-black">Contact</Link>
                       </div>
                     </div>
                   </li>
@@ -232,9 +236,10 @@ function NavBar() {
 
             {/* Icons */}
             <div style={{ display: "flex", gap: "1.5rem" }}>
-              <Link to="/profile"><LuUserRound size={30} color="white" /></Link>
-              <a><IoSearch size={30} color="white" /></a>
-              <Link to="/cart"><LuShoppingCart size={30} color="white" /></Link>
+              {/* <Link to="/profile"><LuUserRound size={30} color="white" /></Link>
+              <a><IoSearch size={30} color="white" /></a> */}
+              {/* <Link to="/cart"><LuShoppingCart size={30} color="white" /></Link> */}
+              <Link to="/about/contact" className='text-black text-decoration-none btn btn-light w-100'>Contact Us</Link>
             </div>
           </div>
         </nav>

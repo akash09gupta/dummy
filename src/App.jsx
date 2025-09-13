@@ -16,6 +16,8 @@ import ErgonomicChair from './component/Office/ErgonomicChairComponent/Ergonomic
 import VisitorChair from './component/Office/VisitorChairComponent/VisitorChair';
 import LeatherChair from './component/Office/LeatherChairComponent/LeatherChair';
 import Bed from './component/Home/HomeBedComponent/Bed';
+import Contact from './component/Contact';
+import ContactUs from './component/ContactUs';
 
 function App() {
   const isMobile = useMediaQuery('(max-width:600px)');
@@ -43,7 +45,8 @@ function App() {
           <Route path='/cafe/stool' element={<Stool/>}></Route>
           <Route path='/cafe/counter' element={<Counter/>}></Route>
 
-          <Route path='/about' element={<About/>}></Route>
+          <Route path='/about/story' element={<About/>}></Route>
+          <Route path='/about/contact' element={<ContactUs/>}></Route>
           <Route path='*' element={<Error/>}></Route>
         </Routes>
       </BrowserRouter>
