@@ -21,6 +21,21 @@ export default function ErgonomicChair() {
         { id: 7, name: "", image: desk7 },
         { id: 8, name: "", image: desk8 },
         { id: 9, name: "", image: desk9 },
+        { id: 7, name: "", image: desk7 },
+        { id: 8, name: "", image: desk8 },
+        { id: 9, name: "", image: desk9 },
+        { id: 7, name: "", image: desk7 },
+        { id: 8, name: "", image: desk8 },
+        { id: 9, name: "", image: desk9 },
+        { id: 7, name: "", image: desk7 },
+        { id: 8, name: "", image: desk8 },
+        { id: 9, name: "", image: desk9 },
+        { id: 7, name: "", image: desk7 },
+        { id: 8, name: "", image: desk8 },
+        { id: 9, name: "", image: desk9 },
+        { id: 7, name: "", image: desk7 },
+        { id: 8, name: "", image: desk8 },
+        { id: 9, name: "", image: desk9 },
     ];
     return (
         <>

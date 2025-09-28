@@ -250,7 +250,7 @@ function NavBar() {
               {/* <Link to="/profile"><LuUserRound size={30} color="white" /></Link>
               <a><IoSearch size={30} color="white" /></a> */}
               {/* <Link to="/cart"><LuShoppingCart size={30} color="white" /></Link> */}
-              <Link to="/about/contact" className='text-black text-decoration-none btn btn-light w-100'>Contact Us</Link>
+              {/* <Link to="/about/contact" className='text-black text-decoration-none btn btn-light w-100'>Contact Us</Link> */}
             </div>
           </div>
         </nav>

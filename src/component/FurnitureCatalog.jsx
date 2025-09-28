@@ -54,8 +54,8 @@ function FurnitureCatalog() {
       </div>
         ) : (
           <div className="container py-5">
-            <Typography variant="h3" className="py-4 mt-0 fw-normal d-flex align-items-center" >
-              Our <span variant="h3" className="py-4 mt-0 fw-normal"  style={{ color: "#105B63", padding: "0 0.5rem" }}>Catalog</span>
+            <Typography variant="h4" className="py-4 mt-0 fw-normal d-flex align-items-center" >
+              Our <span variant="h4" className="py-4 mt-0 fw-normal"  style={{ color: "#105B63", padding: "0 0.5rem" }}>Catalog</span>
             </Typography>
         <div className="row text-center" data-aos="fade-up">
           {categories.map((item, idx) => (

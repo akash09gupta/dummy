@@ -18,6 +18,7 @@ import LeatherChair from './component/Office/LeatherChairComponent/LeatherChair'
 import Bed from './component/Home/HomeBedComponent/Bed';
 import Contact from './component/Contact';
 import ContactUs from './component/ContactUs';
+import BuyProduct from './component/BuyProduct';
 
 function App() {
   const isMobile = useMediaQuery('(max-width:600px)');
@@ -47,6 +48,8 @@ function App() {
 
           <Route path='/about/story' element={<About/>}></Route>
           <Route path='/about/contact' element={<ContactUs/>}></Route>
+
+          <Route path='/BuyProduct' element={<BuyProduct/>}></Route>
           <Route path='*' element={<Error/>}></Route>
         </Routes>
       </BrowserRouter>
