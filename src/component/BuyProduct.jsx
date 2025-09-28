@@ -16,7 +16,7 @@ function BuyProductPage() {
             <div style={{ width: "100%", backgroundColor: "lightgray", padding: 30 }}>
                 <h1 style={{ textAlign: "center", fontSize: 25, fontWeight: "bold" }}>Shop</h1>
             </div>
-            <div style={{ marginTop: 50, marginLeft: 50, }}>
+            <div style={{ padding:35 }}>
                 {product ? (
                     <>
                         <div style={{ display: "flex", gap: 50, width: "90%", flexDirection: isMobile ? "column" : "", }}>
